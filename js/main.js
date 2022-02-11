@@ -56,7 +56,7 @@ class Doll {
 
     lookBackward() {
         gsap.to(this.doll.rotation, { y: -3.15, duration: .45 }) 
-        setTimeout(() => isLookingBackward = true, 150)
+        setTimeout(() => isLookingBackward = true, 100)
         
     }
 
@@ -105,7 +105,7 @@ class Player {
     }
     
     run() {
-        this.PlayerInfo.velocity = .03
+        this.PlayerInfo.velocity = .1
     }   
     stop() {
             gsap.to(this.PlayerInfo, { velocity: 0, duration: .1})
